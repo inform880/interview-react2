@@ -20,6 +20,7 @@ const ClockInOutPanel = ({
           <p>{taskDescription}</p>
           <button
             onClick={() => {
+              createNewTask(taskDescription);
               updateTaskInProgress(false);
               updateTaskDescription("");
             }}
